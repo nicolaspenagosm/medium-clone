@@ -1,6 +1,9 @@
-const Code: React.FC<{ codeSnppet: string }> = ({ codeSnppet }) => {
+const Code: React.FC<{ codeSnppet: string; ariaLabel: string }> = ({
+  codeSnppet,
+  ariaLabel,
+}) => {
   return (
-    <code>
+    <code aria-label={ariaLabel}>
       <pre className={styles.code}>{codeSnppet}</pre>
     </code>
   );

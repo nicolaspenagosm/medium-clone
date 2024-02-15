@@ -15,7 +15,7 @@ const Section: React.FC<{
           __html: DOMPurify.sanitize(description),
         }}
       />
-      <Code codeSnppet={code} />
+      <Code codeSnppet={code} ariaLabel={`${title} implementation example`} />
     </section>
   );
 };

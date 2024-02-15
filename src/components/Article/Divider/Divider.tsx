@@ -1,8 +1,7 @@
 const Divider: React.FC = () => {
   return (
     <>
-      <hr className={styles.hr} />
-      <div className={styles.container}>
+      <div className={styles.container} role="separator">
         <span>•</span>
         <span>•</span>
         <span>•</span>

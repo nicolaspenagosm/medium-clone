@@ -9,7 +9,7 @@ const Actions: React.FC = () => {
   return (
     <div className={styles.rootContainer}>
       <section className={styles.actionsContainer}>
-        <button className={styles.action} aria-label="Clap">
+        <button className={styles.action} aria-label="Clap" onClick={() => {}}>
           <img
             src={clapsIcon}
             role="button"
@@ -18,7 +18,11 @@ const Actions: React.FC = () => {
           />
           <span className={styles.counter}>20</span>
         </button>
-        <button className={styles.action} aria-label="Comment">
+        <button
+          className={styles.action}
+          aria-label="Comment"
+          onClick={() => {}}
+        >
           <img
             src={commentIcon}
             role="button"
@@ -29,16 +33,20 @@ const Actions: React.FC = () => {
         </button>
       </section>
       <section className={styles.actionsContainer}>
-        <button className={styles.action} aria-label="Save">
+        <button className={styles.action} aria-label="Save" onClick={() => {}}>
           <img src={saveIcon} alt="Save" className={styles.icon} />
         </button>
-        <button className={styles.action} aria-label="Listen">
+        <button
+          className={styles.action}
+          aria-label="Listen"
+          onClick={() => {}}
+        >
           <img src={listenIcon} alt="Listen" className={styles.icon} />
         </button>
-        <button className={styles.action} aria-label="Share">
+        <button className={styles.action} aria-label="Share" onClick={() => {}}>
           <img src={shareIcon} alt="Share" className={styles.icon} />
         </button>
-        <button className={styles.action}>
+        <button className={styles.action} onClick={() => {}}>
           <img
             src={moreIcon}
             aria-label="More"
