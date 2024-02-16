@@ -1,5 +1,6 @@
 import Code from "../Code";
 import DOMPurify from "dompurify";
+import "../../Article/article.scss";
 
 const Section: React.FC<{
   title: string;
@@ -8,7 +9,7 @@ const Section: React.FC<{
 }> = ({ title, description, code }) => {
   return (
     <section className={styles.root}>
-      <h2 className={styles.subtitle}>{title}</h2>
+      <h2 className="article__title article__title--subtitle">{title}</h2>
       <p
         className={styles.text}
         dangerouslySetInnerHTML={{

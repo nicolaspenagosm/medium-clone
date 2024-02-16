@@ -1,0 +1,12 @@
+.figure {
+  padding-bottom: 3rem;
+  &__img {
+    padding-bottom: 0.375rem;
+  }
+  &__caption{
+    text-align: center;
+    &--link{
+        text-decoration: underline;
+    }
+  }
+}

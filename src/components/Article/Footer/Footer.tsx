@@ -1,4 +1,5 @@
 import Actions from "../Actions";
+import "./footer.scss";
 
 const Footer: React.FC<{ tags: { tag: string; url: string }[] }> = ({
   tags,
@@ -6,9 +7,9 @@ const Footer: React.FC<{ tags: { tag: string; url: string }[] }> = ({
   return (
     <footer>
       <nav aria-label="Related topics">
-        <ul className={styles.tagsList}>
+        <ul className="tag-list">
           {tags.map((tag, index) => (
-            <li key={index} className={styles.tag}>
+            <li key={index} className="tag-list__tag">
               <a href={tag.url} aria-label={`Read more about ${tag.tag}`}>
                 {tag.tag}
               </a>
@@ -20,8 +21,5 @@ const Footer: React.FC<{ tags: { tag: string; url: string }[] }> = ({
     </footer>
   );
 };
-const styles = {
-  tag: "bg-[#F9F9F9] px-5 py-2 rounded-3xl text-sm",
-  tagsList: "flex gap-3 flex-wrap mb-9",
-};
+
 export default Footer;

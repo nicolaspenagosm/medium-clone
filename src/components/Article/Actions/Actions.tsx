@@ -4,22 +4,27 @@ import listenIcon from "./../../../assets/listen.png";
 import shareIcon from "./../../../assets/share.png";
 import moreIcon from "./../../../assets/more.png";
 import saveIcon from "./../../../assets/save.png";
+import "./actions.scss";
 
 const Actions: React.FC = () => {
   return (
-    <div className={styles.rootContainer}>
-      <section className={styles.actionsContainer}>
-        <button className={styles.action} aria-label="Clap" onClick={() => {}}>
+    <div className="actions__root">
+      <section className="actions__container">
+        <button
+          className="actions__action"
+          aria-label="Clap"
+          onClick={() => {}}
+        >
           <img
             src={clapsIcon}
             role="button"
             alt="Clap"
-            className={styles.icon}
+            className="actions__action__icon"
           />
-          <span className={styles.counter}>20</span>
+          <span className="actions__action__counter">20</span>
         </button>
         <button
-          className={styles.action}
+          className="actions__action"
           aria-label="Comment"
           onClick={() => {}}
         >
@@ -27,31 +32,43 @@ const Actions: React.FC = () => {
             src={commentIcon}
             role="button"
             alt="Comment"
-            className={styles.icon}
+            className="actions__action__icon"
           />
-          <span className={styles.counter}>7</span>
+          <span className="actions__action__counter">7</span>
         </button>
       </section>
-      <section className={styles.actionsContainer}>
-        <button className={styles.action} aria-label="Save" onClick={() => {}}>
-          <img src={saveIcon} alt="Save" className={styles.icon} />
+      <section className="actions__container">
+        <button
+          className="actions__action"
+          aria-label="Save"
+          onClick={() => {}}
+        >
+          <img src={saveIcon} alt="Save" className="actions__action__icon" />
         </button>
         <button
-          className={styles.action}
+          className="actions__action"
           aria-label="Listen"
           onClick={() => {}}
         >
-          <img src={listenIcon} alt="Listen" className={styles.icon} />
+          <img
+            src={listenIcon}
+            alt="Listen"
+            className="actions__action__icon"
+          />
         </button>
-        <button className={styles.action} aria-label="Share" onClick={() => {}}>
-          <img src={shareIcon} alt="Share" className={styles.icon} />
+        <button
+          className="actions__action"
+          aria-label="Share"
+          onClick={() => {}}
+        >
+          <img src={shareIcon} alt="Share" className="actions__action__icon" />
         </button>
-        <button className={styles.action} onClick={() => {}}>
+        <button className="actions__action" onClick={() => {}}>
           <img
             src={moreIcon}
             aria-label="More"
             alt="More"
-            className={styles.icon}
+            className="actions__action__icon"
           />
         </button>
       </section>
@@ -59,12 +76,4 @@ const Actions: React.FC = () => {
   );
 };
 
-const styles = {
-  icon: "w-6",
-  rootContainer: "w-full flex justify-between py-1.5",
-  actionsContainer: "flex ",
-  action:
-    "flex min-w-12 justify-end  items-center text-sm gap-2 text-slate-600 opacity-70 hover:opacity-100",
-  counter: "w-8",
-};
 export default Actions;

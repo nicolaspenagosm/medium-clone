@@ -1,3 +1,5 @@
+import "./figure.scss";
+
 const Figure: React.FC<{
   photographerUrl: string;
   photoCredit: string;
@@ -12,19 +14,19 @@ const Figure: React.FC<{
   imageUrl,
 }) => {
   return (
-    <figure className={styles.rootContainer}>
+    <figure className="figure">
       <img
         src={imageUrl}
         alt="Laptop showing a snnpet of code"
-        className={styles.img}
+        className="figure__img"
       />
-      <figcaption className={styles.caption}>
+      <figcaption className="article__text article__text--caption figure__caption">
         Photo by{" "}
-        <a href={photographerUrl} className={styles.link}>
+        <a href={photographerUrl} className="figure__caption--link">
           {photoCredit}
         </a>
-        on{" "}
-        <a href={photoSourceUrl} className={styles.link}>
+        {" "}on{" "}
+        <a href={photoSourceUrl} className="figure__caption--link">
           {photoSource}
         </a>
       </figcaption>
@@ -32,11 +34,5 @@ const Figure: React.FC<{
   );
 };
 
-const styles = {
-  rootContainer: "pb-12",
-  img: "pb-1.5",
-  caption: "text-sm text-center text-slate-500",
-  link: "underline underline-offset-3",
-};
 
 export default Figure;

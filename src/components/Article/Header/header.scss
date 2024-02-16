@@ -1,0 +1,46 @@
+@import "../../../styles/colors";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__user-data {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1.25rem;
+    &__images-container {
+      position: relative;
+    }
+    &__user-image {
+      width: 2.75rem;
+    }
+    &__company-image {
+      width: 21px;
+      position: absolute;
+      top: 1rem;
+      right: -10px;
+    }
+    &__dot-separator {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      font-size: 0.875rem;
+    }
+    &__follow {
+      color: $accent-color-500;
+    }
+    &__separator {
+      width: 100%;
+      border-top: 1px solid $primary-color-200;
+    }
+    &__company-image {
+      font-family: "Inter", system-ui, "Avenir", "Helvetica", "Arial",
+        sans-serif;
+      color: $accent-color-500;
+    }
+  }
+}
+
+
+//header__user-data__company-image
